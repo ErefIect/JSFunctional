@@ -1,2 +1,1 @@
-let range = (a, b) => (a > b ? [] : [a, ...range(b)]);
-
+let range = (a, b) => a > b ? [] : [a, ...range(a + 1, b)];
